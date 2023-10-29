@@ -20,7 +20,7 @@
     <!--  Empieza la barRa de navegacion -->
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.html">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">
           <img class="img-fluid" src="img/logo-ut.png" alt="Examen" />
         </a>
         <button class="navbar-toggler portonToogler" type="button" data-toggle="collapse"
@@ -31,20 +31,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item px-lg-4">
-              <a href="irvi.html">IRVING
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="irvi.html">IRVING</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a href="nacho.html">MICROSERVICIOS</a>
+              <a class="nav-link" href="nacho.html">MICROSERVICIOS</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a href="jonaaa.html">JONATHAN</a>
+              <a class="nav-link" href="jonaaa.html">JONATHAN</a>
             <li class="nav-item px-lg-4">
-              <a href="andres.html">ANDRES</a>
+              <a class="nav-link" href="andres.html">ANDRES</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a href="index.html">KEVIN</a>
+              <a class="nav-link" href="index.html">KEVIN</a>
             </li>
           </ul>
         </div>
@@ -115,20 +113,20 @@
               </tr>
             </thead>
             <tbody>
-              <tr style="text-align: justify; font-size: 20px;">
+              <tr style="font-size: 25px; text-align: justify;">
                 <td> <b>Agilidad.</b> Dado que microservicios se implementan de forma independiente, resulta más fácil de administrar las correcciones de errores y las versiones de características.
                    Puede actualizar un servicio sin volver a implementar toda la aplicación y revertir una actualización si algo va mal. En muchas aplicaciones tradicionales, un error en una parte de la aplicación puede bloquear todo el proceso de lanzamiento.
                    Es posible que se requieran nuevas características a la espera de que se integre, pruebe y publique una corrección de errores.</td>
                 <td> <b>Complejidad.</b> Una aplicación de microservicios tiene más partes en movimiento que la aplicación monolítica equivalente.
                    Cada servicio es más sencillo, pero el sistema como un todo es más complejo.</td>
               </tr>
-              <tr style="text-align: justify; font-size: 20px;">
+              <tr style="font-size: 25px; text-align: justify;">
                 <td> <b>Equipos pequeños y centrados.</b> Un microservicio debe ser lo suficientemente pequeño como para que un solo equipo de características lo pueda compilar, probar e implementar. Los equipos pequeños favorecen la agilidad. 
                   Los equipos grandes suelen ser menos productivos, porque la comunicación es más lenta, aumenta la sobrecarga de administración y la agilidad disminuye.</td>
                 <td> <b>Desarrollo y pruebas.</b> La escritura de un servicio pequeño que utilice otros servicios dependientes requiere un enfoque que no sea escribir una aplicación tradicional monolítica o en capas. Las herramientas existentes no siempre están diseñadas para trabajar con dependencias de servicios. La refactorización en los límites del servicio puede resultar difícil.
                    También supone un desafío probar las dependencias de los servicios, especialmente cuando la aplicación está evolucionando rápidamente.</td>
               </tr>
-              <tr style="text-align: justify; font-size: 20px;">
+              <tr style="font-size: 25px; text-align: justify;">
                 <td><b>Base de código pequeña.</b> En las aplicaciones monolíticas, con el paso del tiempo se da la tendencia de que las dependencias del código se acaben enredando. Para agregar una característica nueva, es preciso modificar el código en muchos lugares. 
                   Al no compartir el código ni los almacenes de datos, la arquitectura de microservicios minimiza las dependencias y resulta más fácil agregar nuevas características.</td>
                 <td> <b>Falta de gobernanza.</b>  El enfoque descentralizado para la generación de microservicios tiene ventajas, pero también puede causar problemas. Es posible que acabe con multitud de lenguajes y marcos de trabajo diferentes que dificulten el mantenimiento de la aplicación. Podría resultar útil establecer algunos estándares para todo el proyecto, sin restringir en exceso la flexibilidad de los equipos.
@@ -156,6 +154,15 @@
       </div>
     </div>
   </footer>
+   <!-- JS --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/main.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/taggeo-sitio-web.js"></script>
+  <script>
+     new WOW().init();
+   </script>
 </body>
 
 </html>
